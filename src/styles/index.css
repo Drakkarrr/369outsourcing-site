@@ -21,6 +21,10 @@ html {
   background-color: #127bcb;
 }
 
+h1 {
+  @apply basis-3/5 text-3xl font-bold;
+}
+
 @layer {
   .bg-primary-glass {
     background-color: #27e040;
@@ -36,5 +40,11 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
 }
