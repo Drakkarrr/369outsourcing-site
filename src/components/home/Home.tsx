@@ -1,45 +1,38 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
-
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
-
 const Home = () => {
-  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
-
   return (
     <>
-      <section className="gap-16 bg-gray-400 py-10 md:h-full md:pb-0">
-        <div className="container-custom">
-          <div
-            className="flex basis-3/5 justify-center md:z-10
-              md:ml-40 md:mt-16 md:justify-items-end"
-          >
-            <img alt="home-pageGraphic" src={HomePageGraphic} />
-          </div>
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt="Party"
+                src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
 
-          <div>
-            <h1>Heading test</h1>
-            <h1>Heading test</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
-              odit mollitia quo aspernatur nihil cupiditate.
-            </p>
-          </div>
-        </div>
+            <div className="lg:py-24">
+              <h2 className="text-3xl font-bold sm:text-4xl">
+                Grow your audience
+              </h2>
 
-        {isAboveMediumScreen && (
-          <div className="bg-primary-100 h-[150px] w-full py-10">
-            <div className="mx-auto w-5/6">
-              <div className="flex w-3/5 items-center justify-between gap-8">
-                <img alt="redbull-sponsor" src={SponsorRedBull} />
-                <img alt="forbes-sponsor" src={SponsorForbes} />
-                <img alt="fortune-sponsor" src={SponsorFortune} />
-              </div>
+              <p className="mt-4 text-gray-600">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut
+                qui hic atque tenetur quis eius quos ea neque sunt, accusantium
+                soluta minus veniam tempora deserunt? Molestiae eius quidem quam
+                repellat.
+              </p>
+
+              <a
+                href="#"
+                className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Get Started Today
+              </a>
             </div>
           </div>
-        )}
+        </div>
       </section>
     </>
   );

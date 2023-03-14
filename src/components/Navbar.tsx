@@ -1,68 +1,195 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assets/logo.png";
-import useMediaQuery from "@/hooks/useMediaQuery";
 
-interface Props {
-  isScrolled: boolean;
-}
-
-const Navbar = ({ isScrolled }: Props) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
-  const isAboveMediumScreen = useMediaQuery("(min-width: 1060px)");
-  const navBarClasses = isScrolled ? "bg-lime-300" : "bg-white bg-opacity-90";
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
     <>
-      <nav
-        className={`${navBarClasses} flex-between fixed top-0 z-30 w-full py-6`}
-      >
-        <div className="flex-between mx-auto w-5/6">
-          <div className="logo-container flex-between w-full gap-16">
-            <img src={Logo} alt="369outsourcing logo" />
-            {isAboveMediumScreen ? (
-              <div className="flex-between w-full">
-                <div className="flex-between gap-8 text-sm">
-                  <NavLink to="/">Home</NavLink>
-                  <NavLink to="/about">About</NavLink>
-                  <NavLink to="/services">Services</NavLink>
-                </div>
-                <div className="flex-between cursor-pointer gap-8 rounded-md bg-black px-10 py-2 hover:bg-slate-800 hover:text-white">
-                  <NavLink to="/contact">Contact Us</NavLink>
-                </div>
-              </div>
-            ) : (
-              <button
-                className="rounded-full bg-zinc-500 p-2"
-                onClick={() => setIsOpen(!isOpen)}
+      <nav className="z-20 w-full bg-gray-900">
+        <div className="mx-auto px-4 py-5 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
+          <div className="relative flex items-center justify-between">
+            <a
+              href="/"
+              aria-label="Company"
+              title="Company"
+              className="inline-flex items-center"
+            >
+              <svg
+                className="text-teal-accent-400 w-8"
+                viewBox="0 0 24 24"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeMiterlimit="10"
+                stroke="currentColor"
+                fill="none"
               >
-                <Bars3Icon className="h-6 w-6 text-white" />
+                <rect x="3" y="1" width="7" height="12" />
+                <rect x="3" y="17" width="7" height="6" />
+                <rect x="14" y="1" width="7" height="6" />
+                <rect x="14" y="11" width="7" height="12" />
+              </svg>
+              <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-100">
+                369Outsourcing
+              </span>
+            </a>
+            <ul className=" hidden items-center space-x-8 lg:flex">
+              <li>
+                <NavLink
+                  to="/"
+                  aria-label="Our product"
+                  className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/about"
+                  aria-label="Our product"
+                  className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                >
+                  About Us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/services"
+                  aria-label="Product pricing"
+                  className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                >
+                  Our Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/contact"
+                  className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded bg-indigo-600  py-3 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
+                  aria-label="Sign up"
+                >
+                  Contact Us
+                </NavLink>
+              </li>
+            </ul>
+            <div className="lg:hidden">
+              <button
+                aria-label="Open Menu"
+                title="Open Menu"
+                className="focus:shadow-outline -mr-1 rounded p-2 transition duration-200 focus:outline-none"
+                onClick={() => setIsMenuOpen(true)}
+              >
+                <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
+                  />
+                  <path
+                    fill="currentColor"
+                    d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
+                  />
+                </svg>
               </button>
-            )}
+
+              {isMenuOpen && (
+                <div className="absolute top-0 left-0 z-20 w-full">
+                  <div className="rounded border bg-gray-400 p-5 shadow-sm">
+                    <div className="mb-4 flex items-center justify-between">
+                      <div>
+                        <a
+                          href="#"
+                          aria-label="Company"
+                          className="inline-flex items-center"
+                        >
+                          <svg
+                            className="text-deep-purple-accent-400 w-8"
+                            viewBox="0 0 24 24"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeMiterlimit="10"
+                            stroke="currentColor"
+                            fill="none"
+                          >
+                            <rect x="3" y="1" width="7" height="12" />
+                            <rect x="3" y="17" width="7" height="6" />
+                            <rect x="14" y="1" width="7" height="6" />
+                            <rect x="14" y="11" width="7" height="12" />
+                          </svg>
+                          <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-800">
+                            369Outsourcing
+                          </span>
+                        </a>
+                      </div>
+                      <div>
+                        <button
+                          aria-label="Close Menu"
+                          title="Close Menu"
+                          className="focus:shadow-outline -mt-2 -mr-2 rounded p-2 transition duration-200 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
+                          <svg
+                            className="w-5 text-gray-600"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="currentColor"
+                              d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <nav>
+                      <ul className="space-y-4">
+                        <li>
+                          <NavLink
+                            to="/"
+                            aria-label="home"
+                            className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                          >
+                            Home
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/about"
+                            aria-label="about"
+                            className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                          >
+                            About Us
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/services"
+                            aria-label="services"
+                            className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                          >
+                            Our Services
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/contact"
+                            className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded px-2 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
+                            aria-label="Contact Us"
+                          >
+                            Contact Us
+                          </NavLink>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
-
-        {!isAboveMediumScreen && isOpen && (
-          <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-red-200 drop-shadow-xl">
-            <div className="flex justify-end p-12">
-              <button onClick={() => setIsOpen(!isOpen)}>
-                <XMarkIcon className="h-6 w-6 text-black" />
-              </button>
-            </div>
-
-            {/* <div className="justify-en flex w-full flex-col"> */}
-            <div className="text-2x1 ml-[33%] flex flex-col gap-10">
-              <NavLink to="/">Home</NavLink>
-              <NavLink to="/about">About</NavLink>
-              <NavLink to="/services">Services</NavLink>
-            </div>
-            {/* <div className="flex-between cursor-pointer gap-8 rounded-md bg-black px-10 py-2 hover:bg-slate-800 hover:text-white">
-              <NavLink to="/contact">Contact Us</NavLink>
-            </div> */}
-            {/* </div> */}
-          </div>
-        )}
       </nav>
     </>
   );
