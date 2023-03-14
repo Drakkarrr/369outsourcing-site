@@ -13,7 +13,7 @@ const Home = () => {
             </div>
 
             <div className="lg:py-24">
-              <h2 className="text-3xl font-bold sm:text-4xl">
+              <h2 className="text-3xl font-bold text-black sm:text-4xl">
                 Grow your audience
               </h2>
 

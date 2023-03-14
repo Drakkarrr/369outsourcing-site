@@ -21,26 +21,27 @@ const Contact = () => {
         </div>
         <div className="relative mx-auto flex w-full max-w-xl flex-col items-start px-4 md:px-0 lg:max-w-screen-xl lg:px-8">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            <p className="bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-teal-900">
+            {/* <p className="bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-teal-900">
               Brand new
-            </p>
+            </p> */}
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Everything you
-              <br className="hidden md:block" />
-              can imagine{" "}
-              <span className="text-deep-purple-accent-400 inline-block">
-                is real
-              </span>
+              Contact Us
             </h2>
             <p className="mb-5 pr-5 text-base text-gray-700 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              Collaborating with 369 Outsourcing Solutions can help streamline
+              your business operations and elevate your productivity to new
+              heights.
+              <br />
+              <br />
+              Get in touch with us today and explore how Offshore Business
+              Processing can not only help you achieve your business goals, but
+              also optimize your costs along the way. Let's start a conversation
+              and see how we can help your business thrive."
             </p>
             <div className="flex items-center">
               <a
                 href="/"
-                className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded px-6 font-medium tracking-wide text-slate-600 text-white shadow-md transition duration-200 focus:outline-none"
+                className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded px-6 font-medium tracking-wide text-black shadow-md outline transition duration-200 focus:outline-none"
               >
                 Get started
               </a>

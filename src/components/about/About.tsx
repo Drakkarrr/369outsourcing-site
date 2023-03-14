@@ -22,8 +22,10 @@ const About = () => {
 
         <div className="relative mx-auto mt-0 flex w-full max-w-xl flex-col  items-start px-4 pt-1 md:px-0 lg:max-w-screen-xl lg:px-8">
           <div className="mb-16  lg:my-40 lg:max-w-lg lg:pr-5">
-            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              About Us
+            <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
+                <span className="relative font-extrabold">About Us</span>
+              </span>
             </h2>
             <p className="mb-5 pr-5 text-base text-gray-700 md:text-lg">
               <strong className="font-bold">369 Outsourcing Solutions</strong>{" "}
@@ -43,7 +45,7 @@ const About = () => {
             <div className="flex items-center">
               <a
                 href="/contact"
-                className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded border px-6 font-medium tracking-wide text-black text-white shadow-md transition duration-200 focus:outline-none"
+                className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded border px-6 font-medium tracking-wide text-blue-500 shadow-md transition duration-200 focus:outline-none"
               >
                 Contact Us
               </a>

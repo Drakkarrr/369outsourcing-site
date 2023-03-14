@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "@/assets/trans-lowgo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -15,23 +16,11 @@ const Navbar = () => {
               title="Company"
               className="inline-flex items-center"
             >
-              <svg
-                className="text-teal-accent-400 w-8"
-                viewBox="0 0 24 24"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeMiterlimit="10"
-                stroke="currentColor"
-                fill="none"
-              >
-                <rect x="3" y="1" width="7" height="12" />
-                <rect x="3" y="17" width="7" height="6" />
-                <rect x="14" y="1" width="7" height="6" />
-                <rect x="14" y="11" width="7" height="12" />
-              </svg>
+              <div className="lg:w-12">
+                <img className="w-full" src={Logo} alt="Our company logo" />
+              </div>
               <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-100">
-                369Outsourcing
+                369Outsourcing <br /> soulutions
               </span>
             </a>
             <ul className=" hidden items-center space-x-8 lg:flex">
@@ -46,7 +35,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/about"
+                  to="/about-us"
                   aria-label="Our product"
                   className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
                 >
@@ -64,7 +53,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/services"
+                  to="/our-services"
                   aria-label="Product pricing"
                   className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
                 >
@@ -73,7 +62,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/contact-us"
                   className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded bg-indigo-600  py-3 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
                   aria-label="Sign up"
                 >
@@ -111,26 +100,18 @@ const Navbar = () => {
                       <div>
                         <a
                           href="#"
-                          aria-label="Company"
+                          aria-label="369 oursourcing solutions company logo"
                           className="inline-flex items-center"
                         >
-                          <svg
-                            className="text-deep-purple-accent-400 w-8"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg>
+                          <div className="w-12">
+                            <img
+                              className="w-full"
+                              src={Logo}
+                              alt="Our company logo"
+                            />
+                          </div>
                           <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-800">
-                            369Outsourcing
+                            369Outsourcing <br /> solutions
                           </span>
                         </a>
                       </div>
@@ -166,7 +147,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <NavLink
-                            to="/about"
+                            to="/about-us"
                             aria-label="about"
                             className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
                           >
@@ -184,7 +165,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <NavLink
-                            to="/services"
+                            to="/our-services"
                             aria-label="services"
                             className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
                           >
@@ -193,7 +174,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <NavLink
-                            to="/contact"
+                            to="/contact-us"
                             className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline inline-flex h-12 items-center justify-center rounded px-2 font-medium tracking-wide text-white shadow-md transition duration-200 focus:outline-none"
                             aria-label="Contact Us"
                           >
