@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import NotFound from "@/components/NotFound";
 import HomePage from "@/pages/Home";
 import AboutPage from "@/pages/About";
 import Services from "@/pages/Services";
@@ -14,6 +15,7 @@ const App = (): JSX.Element => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </>
   );

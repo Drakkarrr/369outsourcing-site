@@ -55,6 +55,15 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
+                  to="/our-team"
+                  aria-label="Product pricing"
+                  className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                >
+                  Our Team
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
                   to="/services"
                   aria-label="Product pricing"
                   className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
@@ -162,6 +171,15 @@ const Navbar = () => {
                             className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
                           >
                             About Us
+                          </NavLink>
+                        </li>
+                        <li>
+                          <NavLink
+                            to="/our-team"
+                            aria-label="Product pricing"
+                            className="hover:text-teal-accent-400 font-medium tracking-wide text-gray-100 transition-colors duration-200"
+                          >
+                            Our Team
                           </NavLink>
                         </li>
                         <li>
