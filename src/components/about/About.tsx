@@ -3,7 +3,7 @@ import Meeting from "@/assets/meeting.jpg";
 const About = () => {
   return (
     <>
-      <div className="relative flex flex-col py-16 lg:flex-col lg:pt-0 lg:pb-0">
+      <div className="relative mt-16 flex flex-col py-16 lg:flex-col lg:pt-0 lg:pb-0">
         <div className="inset-y-0 top-0 right-0 z-0 mx-auto w-full max-w-xl bg-black px-4 md:px-0 lg:absolute lg:mx-0 lg:mb-0 lg:w-7/12 lg:max-w-full lg:pr-0 xl:px-0">
           <svg
             className="absolute left-0 hidden h-full -translate-x-1/2 transform text-white lg:block"

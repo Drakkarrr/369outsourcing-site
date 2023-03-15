@@ -1,61 +1,116 @@
-import HomeGraphicPage from "@/assets/HomePageGraphic.png";
-
 const Contact = () => {
   return (
     <>
-      <div className="relative flex flex-col-reverse py-16 lg:flex-col lg:pt-0 lg:pb-0">
-        <div className="inset-y-0 top-0 right-0 z-0 mx-auto w-full max-w-xl px-4 md:px-0 lg:absolute lg:mx-0 lg:mb-0 lg:w-7/12 lg:max-w-full lg:pr-0 xl:px-0">
-          <svg
-            className="absolute left-0 hidden h-full -translate-x-1/2 transform text-white lg:block"
-            viewBox="0 0 100 100"
-            fill="currentColor"
-            preserveAspectRatio="none slice"
-          >
-            <path d="M50 0H100L50 100H0L50 0Z" />
-          </svg>
-          <img
-            className="h-56 w-full rounded object-cover shadow-lg md:h-96 lg:h-full lg:rounded-none lg:shadow-none"
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-            alt=""
-          />
-        </div>
-        <div className="relative mx-auto flex w-full max-w-xl flex-col items-start px-4 md:px-0 lg:max-w-screen-xl lg:px-8">
-          <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            {/* <p className="bg-teal-accent-400 mb-4 inline-block rounded-full px-3 py-px text-xs font-semibold uppercase tracking-wider text-teal-900">
-              Brand new
-            </p> */}
-            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Contact Us
-            </h2>
-            <p className="mb-5 pr-5 text-base text-gray-700 md:text-lg">
-              Collaborating with 369 Outsourcing Solutions can help streamline
-              your business operations and elevate your productivity to new
-              heights.
-              <br />
-              <br />
-              Get in touch with us today and explore how Offshore Business
-              Processing can not only help you achieve your business goals, but
-              also optimize your costs along the way. Let's start a conversation
-              and see how we can help your business thrive."
-            </p>
-            <div className="flex items-center">
-              <a
-                href="/"
-                className="bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline mr-6 inline-flex h-12 items-center justify-center rounded px-6 font-medium tracking-wide text-black shadow-md outline transition duration-200 focus:outline-none"
-              >
-                Get started
-              </a>
-              <a
-                href="/"
-                aria-label=""
-                className="hover:text-deep-purple-accent-700 inline-flex items-center font-semibold text-gray-800 transition-colors duration-200"
-              >
-                Learn more
-              </a>
+      <section className="mt-16 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-6 py-12">
+          <div className="lg:-mx-6 lg:flex lg:items-center">
+            <div className="lg:mx-6 lg:w-1/2">
+              <h2 className="mb-4 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+                Contact Us
+              </h2>
+              <p className="mb-4 pr-5 text-base text-gray-700 md:text-lg">
+                Collaborating with 369 Outsourcing Solutions can help streamline
+                your business operations and elevate your productivity to new
+                heights.
+                <br />
+                <br />
+                Get in touch with us today and explore how Offshore Business
+                Processing can not only help you achieve your business goals,
+                but also optimize your costs along the way. Let's start a
+                conversation and see how we can help your business thrive."
+              </p>
+              <div className="mt-6 space-y-8 md:mt-8">
+                <p className="-mx-2 flex items-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mx-2 h-6 w-6 text-blue-500 dark:text-blue-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+
+                  <span className="mx-2 w-72 truncate text-gray-700 dark:text-gray-400">
+                    +61 2 9189 4141
+                  </span>
+                </p>
+
+                <p className="-mx-2 flex items-start">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="mx-2 h-6 w-6 text-blue-500 dark:text-blue-400"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+
+                  <span className="mx-2 w-72 truncate text-gray-700 dark:text-gray-400">
+                    info@369outsourcingsolutions.com
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-8 lg:mx-6 lg:w-1/2">
+              <div className="mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 shadow-2xl shadow-gray-300/50 dark:bg-gray-900 dark:shadow-black/50 lg:max-w-xl">
+                <h1 className="text-lg font-medium text-gray-700">
+                  Send us a message
+                </h1>
+
+                <form className="mt-6">
+                  <div className="flex-1">
+                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                      Full Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="John Doe"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                    />
+                  </div>
+
+                  <div className="mt-6 flex-1">
+                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                      Email address
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="johndoe@example.com"
+                      className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                    />
+                  </div>
+
+                  <div className="mt-6 w-full">
+                    <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
+                      Message
+                    </label>
+                    <textarea
+                      className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <button className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                    Send message
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

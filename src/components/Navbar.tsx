@@ -7,20 +7,15 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="z-20 w-full bg-gray-900">
+      <nav className="fixed top-0 z-20 w-full bg-gray-900">
         <div className="mx-auto px-4 py-5 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8">
           <div className="relative flex items-center justify-between">
-            <a
-              href="/"
-              aria-label="Company"
-              title="Company"
-              className="inline-flex items-center"
-            >
-              <div className="lg:w-12">
-                <img className="w-full" src={Logo} alt="Our company logo" />
+            <a href="/" className="inline-flex items-center">
+              <div className="sm: w[30px] lg: w-12">
+                <img src={Logo} alt="Our company logo" />
               </div>
               <span className="ml-2 text-xl font-bold uppercase tracking-wide text-gray-100">
-                369Outsourcing <br /> soulutions
+                369Outsourcing <br /> solutions
               </span>
             </a>
             <ul className=" hidden items-center space-x-8 lg:flex">
@@ -75,7 +70,7 @@ const Navbar = () => {
                 aria-label="Open Menu"
                 title="Open Menu"
                 className="focus:shadow-outline -mr-1 rounded p-2 transition duration-200 focus:outline-none"
-                onClick={() => setIsMenuOpen(true)}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
               >
                 <svg className="w-5 text-gray-600" viewBox="0 0 24 24">
                   <path

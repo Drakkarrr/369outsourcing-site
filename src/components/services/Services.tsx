@@ -3,16 +3,10 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <section className="bg-gray-900 text-white">
+      <section className="mt-16 bg-gray-900 text-white">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="mx-auto max-w-lg text-center">
             <h2 className="text-3xl font-bold sm:text-4xl">Our Services</h2>
-            {/* <h2 className="mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-              <span className="relative inline-block text-black">
-                <span className="relative font-extrabold">About Us</span>
-              </span>
-            </h2> */}
-
             <p className="mt-4 text-gray-300">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequuntur aliquam doloribus nesciunt eos fugiat. Vitae aperiam
