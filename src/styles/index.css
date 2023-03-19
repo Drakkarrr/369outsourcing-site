@@ -18,7 +18,7 @@ html {
   height: 100%;
   font-family: "DM Sans", sans-serif;
   @apply text-slate-50;
-  /* background-color: #127bcb; */
+  background-color: #127bcb;
 }
 
 h1 {
@@ -47,4 +47,10 @@ h1 {
     font-weight: 700;
     margin-bottom: 1rem;
   }
+}
+
+nav {
+  background-color: rgba(182, 176, 176, 0.45) !important;
+  transition-delay: 0.3s;
+  transition: 0.5s ease-in-out;
 }
