@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "RosesBolero";
+  src: url("Roses Bolero.eot");
+  src: url("Roses Bolero.eot?#iefix") format("embedded-opentype"),
+    url("Roses Bolero.woff") format("woff"),
+    url("Roses Bolero.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

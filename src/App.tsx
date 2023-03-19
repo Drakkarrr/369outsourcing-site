@@ -6,6 +6,7 @@ import Services from "@/pages/Services";
 import Contact from "@/pages/ContactUs";
 import { Routes, Route } from "react-router-dom";
 import Team from "./components/team/Team";
+import Test from "./Test";
 
 const App = (): JSX.Element => {
   return (
@@ -19,6 +20,7 @@ const App = (): JSX.Element => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      {/* <Test /> */}
     </>
   );
 };

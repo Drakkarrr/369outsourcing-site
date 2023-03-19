@@ -14,6 +14,7 @@ module.exports = {
     sans: ["Roboto", "sans-serif"],
     dmsans: ["DM Sans", "sans-serif"],
     montserrat: ["Montserrat", "sans-serif"],
+    rosesbolero: ["Roses Bolero", "Georgia"],
   },
   screens: {
     xs: "480px",
