@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <>
-      <div className="relative bg-white pt-[120px] pb-[110px] lg:pt-[150px]">
+      <div className="relative pt-[120px] pb-[110px] lg:pt-[150px]">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 lg:w-5/12">

@@ -43,7 +43,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-color: #127bcb;
+  background-color: #127bcb !important;
   font-family: "RosesBolero", Georgia;
   font-weight: 700;
   letter-spacing: 2px;
