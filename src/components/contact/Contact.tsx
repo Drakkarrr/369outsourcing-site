@@ -60,7 +60,7 @@ const Contact = () => {
                       />
                     </svg>
 
-                    <span className="mx-2 w-full truncate text-white dark:text-gray-400">
+                    <span className="mx-2 w-full truncate text-white">
                       info@369outsourcingsolutions.com
                     </span>
                   </p>
@@ -68,48 +68,50 @@ const Contact = () => {
               </div>
 
               <div className="mt-8 lg:mx-6 lg:w-1/2">
-                <div className="mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 shadow-2xl shadow-gray-300/50 dark:bg-gray-900 dark:shadow-black/50 lg:max-w-xl">
-                  <h1 className="text-lg font-medium text-gray-700">
-                    Send us a message
-                  </h1>
+                <StyledForm>
+                  <div className="mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 text-black shadow-2xl shadow-gray-300/50 dark:shadow-black/50 lg:max-w-xl">
+                    <h1 className="heading text-lg font-medium">
+                      Send us a message
+                    </h1>
 
-                  <form className="mt-6">
-                    <div className="flex-1">
-                      <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
-                        Full Name
-                      </label>
-                      <input
-                        type="text"
-                        placeholder="John Doe"
-                        className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
-                      />
-                    </div>
+                    <form className="mt-6">
+                      <div className="flex-1">
+                        <label className="mb-2 block text-sm dark:text-gray-200">
+                          Full Name
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="John Doe"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                        />
+                      </div>
 
-                    <div className="mt-6 flex-1">
-                      <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
-                        Email address
-                      </label>
-                      <input
-                        type="email"
-                        placeholder="johndoe@example.com"
-                        className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
-                      />
-                    </div>
+                      <div className="mt-6 flex-1">
+                        <label className="mb-2 block text-sm dark:text-gray-200">
+                          Email address
+                        </label>
+                        <input
+                          type="email"
+                          placeholder="johndoe@example.com"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                        />
+                      </div>
 
-                    <div className="mt-6 w-full">
-                      <label className="mb-2 block text-sm text-gray-600 dark:text-gray-200">
-                        Message
-                      </label>
-                      <textarea
-                        className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                    <button className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
-                      Send message
-                    </button>
-                  </form>
-                </div>
+                      <div className="box-mes mt-6 w-full">
+                        <label className="mb-2 block text-sm dark:text-gray-200">
+                          Message
+                        </label>
+                        <textarea
+                          className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                      <button className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                        Send message
+                      </button>
+                    </form>
+                  </div>
+                </StyledForm>
               </div>
             </div>
           </div>
@@ -138,6 +140,30 @@ const StyledContact = styled.div`
       box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(15px);
       background: rgba(255, 255, 255, 0.15);
+    }
+  }
+`;
+
+const StyledForm = styled.div`
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+
+  h1.heading {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: normal;
+    font-weight: bold;
+  }
+
+  form {
+    input {
+      font-size: 1rem;
+      font-family: "DM Sans", sans-serif;
+    }
+    textarea {
+      font-family: "DM Sans", sans-serif;
+    }
+    button {
+      font-family: "DM Sans", sans-serif;
+      /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); */
     }
   }
 `;
