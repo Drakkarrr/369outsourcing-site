@@ -7,13 +7,13 @@ const Services: React.FC = () => {
       <StyledServices>
         <section className="services pt-[110px] text-white">
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-            <div className="mx-auto max-w-lg text-center">
-              <h2 className="heading text-5xl font-bold sm:text-5xl">
+            <div className="mx-auto max-w-lg lg:text-center">
+              <h2 className="heading text-center text-5xl font-bold sm:text-5xl">
                 Our Services
               </h2>
 
               <p className="subhead mt-4 text-white">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                LLLorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Facilis est voluptatibus ea impedit quod esse, modi, sapiente,
                 consequuntur enim at ducimus cupiditate porro deserunt? Veniam
                 magni obcaecati ea iste quasi eaque aperiam, et temporibus
@@ -165,15 +165,6 @@ const Services: React.FC = () => {
                   managing financial transactions and accounting processes for
                   client companies
                 </p>
-              </a>
-            </div>
-
-            <div className="started mt-12 text-center">
-              <a
-                href="#"
-                className="inline-block rounded  px-12 py-3 text-sm font-medium text-white transition focus:outline-none focus:ring"
-              >
-                Get Started Today
               </a>
             </div>
           </div>

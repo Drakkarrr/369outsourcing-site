@@ -6,12 +6,12 @@ const Team = () => {
       <StyledTeam>
         <section className="services pt-[110px] text-white">
           <div className="mx-auto mb-10 max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-            <div className="card mx-auto max-w-lg text-center">
-              <h2 className="heading text-5xl font-bold sm:text-5xl">
+            <div className="card mx-auto max-w-lg lg:text-center">
+              <h2 className="heading text-center text-5xl font-bold sm:text-5xl">
                 Our Team
               </h2>
 
-              <p className="subhead mt-4 text-gray-300">
+              <p className="subhead mt-4 text-gray-300 sm:text-left lg:text-center">
                 Our team is composed of talented and dedicated individuals who
                 are passionate about delivering excellent service to our
                 clients. We pride ourselves on our attention to detail, strong
@@ -802,6 +802,7 @@ export default Team;
 const StyledTeam = styled.div`
   /* .card {
     background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
+    width: 80% !important;
   } */
   h2.heading {
     color: #fffffe;
