@@ -178,18 +178,16 @@ export default Services;
 
 const StyledServices = styled.div`
   .services {
-    background-color: #127bcb;
-
     h2.heading {
-      color: #fffffe;
+      color: black;
       font-family: "DM Sans", sans-serif !important;
       letter-spacing: normal;
     }
     p.subhead {
-      color: #fffffe;
+      color: black !important;
     }
     p {
-      color: #fffffe;
+      color: #fffffe !important;
     }
     .started a {
       color: #fffffe;
@@ -202,6 +200,7 @@ const StyledServices = styled.div`
     .bg-glass {
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       outline: none;
+      background: rgb(255, 255, 254);
       background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
     }
   }

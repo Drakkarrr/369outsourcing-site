@@ -17,7 +17,7 @@ const Navbar = (): JSX.Element => {
                   <img src={Logo} alt="Our company logo" />
                 </div>
                 <span className="font-bold uppercase tracking-wide text-gray-100 sm:ml-2 sm:text-sm lg:text-lg">
-                  369Outsourcing <br /> solutions
+                  369 Outsourcing <br /> solutions
                 </span>
               </a>
               <ul className=" hidden items-center space-x-8 lg:flex">

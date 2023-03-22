@@ -800,15 +800,15 @@ const Team = () => {
 export default Team;
 
 const StyledTeam = styled.div`
-  /* .card {
-    background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
-    width: 80% !important;
-  } */
   h2.heading {
     color: #fffffe;
-    font-family: "DM Sans", sans-serif;
+    /* font-family: "DM Sans", sans-serif; */
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: bold;
   }
   p.subhead {
     color: #fffffe;
+    font-family: "Poppins", sans-serif;
   }
 `;

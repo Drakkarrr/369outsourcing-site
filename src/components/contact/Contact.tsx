@@ -60,7 +60,7 @@ const Contact = () => {
                       />
                     </svg>
 
-                    <span className="mx-2 w-full truncate text-white">
+                    <span className="mx-2 w-full truncate text-black">
                       info@369outsourcingsolutions.com
                     </span>
                   </p>
@@ -125,27 +125,33 @@ export default Contact;
 
 const StyledContact = styled.div`
   .contact-container {
-    background: #127bcb;
+    background: rgb(255, 255, 254);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 254, 1) 0%,
+      rgba(150, 147, 147, 1) 100%
+    );
 
     h2.heading {
-      color: #fffffe;
-      font-family: "DM Sans", sans-serif;
+      color: black;
+      font-family: "Poppins", sans-serif;
     }
     .container-con {
       border-radius: 25px;
       padding: 1rem;
-      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+      /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(15px);
-      background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
+      border-top: 1px solid rgba(255, 255, 255, 0.1); */
+      /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); */
+      /* backdrop-filter: blur(15px); */
+      /* background: linear-gradient(135deg, #4682eb -20%, #01beff 120%); */
+      /* background-color: white; */
     }
   }
 `;
 
 const StyledForm = styled.div`
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); */
 
   h1.heading {
     font-family: "DM Sans", sans-serif;
@@ -156,13 +162,13 @@ const StyledForm = styled.div`
   form {
     input {
       font-size: 1rem;
-      font-family: "DM Sans", sans-serif;
+      /* font-family: "DM Sans", sans-serif; */
     }
-    textarea {
+    /* textarea {
       font-family: "DM Sans", sans-serif;
-    }
+    } */
     button {
-      font-family: "DM Sans", sans-serif;
+      /* font-family: "DM Sans", sans-serif; */
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
 
