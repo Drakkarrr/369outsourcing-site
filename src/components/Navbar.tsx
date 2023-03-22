@@ -200,9 +200,8 @@ const StyledNav = styled.nav`
   nav {
     backdrop-filter: blur(5px);
     box-shadow: 0px 1px 10px #252525af;
-
     /* background: rgba(255, 255, 255, 0.05); */
-    background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
+    background: #127bcb;
 
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -216,13 +215,17 @@ const StyledNav = styled.nav`
     }
 
     .cta {
-      background: rgba(255, 255, 255, 0.05);
+      background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 30px;
       padding: 3px 15px;
       letter-spacing: 2.2px;
+
+      &:hover {
+        background: #127bcb;
+      }
     }
     .icon {
       color: white;

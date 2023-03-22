@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <>
       <StyledContact>
-        <section className="contact-container mt-16 dark:bg-gray-900">
+        <section className="contact-container mt-16">
           <div className="container mx-auto px-6 py-12">
             <div className="container-con lg:-mx-6 lg:flex lg:items-start">
               <div className="py-10 lg:mx-6 lg:w-1/2">
@@ -82,7 +82,7 @@ const Contact = () => {
                         <input
                           type="text"
                           placeholder="John Doe"
-                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
                         />
                       </div>
 
@@ -93,7 +93,7 @@ const Contact = () => {
                         <input
                           type="email"
                           placeholder="johndoe@example.com"
-                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
                         />
                       </div>
 
@@ -102,7 +102,7 @@ const Contact = () => {
                           Message
                         </label>
                         <textarea
-                          className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
+                          className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
                           placeholder="Message"
                         ></textarea>
                       </div>
@@ -125,7 +125,7 @@ export default Contact;
 
 const StyledContact = styled.div`
   .contact-container {
-    background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
+    background: #127bcb;
 
     h2.heading {
       color: #fffffe;
@@ -139,7 +139,7 @@ const StyledContact = styled.div`
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
       backdrop-filter: blur(15px);
-      background: rgba(255, 255, 255, 0.15);
+      background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
     }
   }
 `;
@@ -163,7 +163,12 @@ const StyledForm = styled.div`
     }
     button {
       font-family: "DM Sans", sans-serif;
-      /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); */
+      box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
+
+      &:hover {
+        background: #127bcb;
+      }
     }
   }
 `;
