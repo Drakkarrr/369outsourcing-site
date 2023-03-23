@@ -125,6 +125,7 @@ export default Contact;
 
 const StyledContact = styled.div`
   .contact-container {
+    letter-spacing: normal;
     background: rgb(255, 255, 254);
     background: linear-gradient(
       90deg,
@@ -154,7 +155,6 @@ const StyledForm = styled.div`
   /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); */
 
   h1.heading {
-    font-family: "DM Sans", sans-serif;
     letter-spacing: normal;
     font-weight: bold;
   }
@@ -162,13 +162,12 @@ const StyledForm = styled.div`
   form {
     input {
       font-size: 1rem;
-      /* font-family: "DM Sans", sans-serif; */
+      font-family: "Poppins", sans-serif;
     }
     /* textarea {
       font-family: "DM Sans", sans-serif;
     } */
     button {
-      /* font-family: "DM Sans", sans-serif; */
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
       background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
 

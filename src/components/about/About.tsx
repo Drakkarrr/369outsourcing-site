@@ -9,7 +9,7 @@ const About = () => {
         <StyledAbout className="container mx-auto px-6 py-12">
           <div className="container-con lg:-mx-6 lg:flex lg:items-start">
             <div className="py-10 lg:mx-6 lg:w-1/2">
-              <h2 className="heading mb-4 font-sans text-5xl font-bold tracking-tight text-black sm:text-5xl sm:leading-none">
+              <h2 className="heading mb-4 text-5xl font-bold tracking-tight text-black sm:text-5xl sm:leading-none">
                 About Us
               </h2>
               <p className="mb-4 pr-5 text-base text-white md:text-lg">
@@ -67,6 +67,7 @@ const StyledAbout = styled.div`
 
     h2.heading {
       color: black !important;
+      font-family: "Poppins", sans-serif !important;
     }
     .container-con {
       border-radius: 25px;
@@ -80,7 +81,6 @@ const StyledAbout = styled.div`
     }
   }
   .button {
-    font-family: "DM Sans", sans-serif;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
 

@@ -13,7 +13,7 @@ const Services: React.FC = () => {
               </h2>
 
               <p className="subhead mt-4 text-white">
-                LLLorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Facilis est voluptatibus ea impedit quod esse, modi, sapiente,
                 consequuntur enim at ducimus cupiditate porro deserunt? Veniam
                 magni obcaecati ea iste quasi eaque aperiam, et temporibus
@@ -177,10 +177,10 @@ const Services: React.FC = () => {
 export default Services;
 
 const StyledServices = styled.div`
+  letter-spacing: normal;
   .services {
     h2.heading {
       color: black;
-      font-family: "DM Sans", sans-serif !important;
       letter-spacing: normal;
     }
     p.subhead {
