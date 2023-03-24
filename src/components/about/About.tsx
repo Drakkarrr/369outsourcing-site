@@ -31,7 +31,7 @@ const About = () => {
               <div className="mt-6 space-y-8 md:mt-8">
                 <Link
                   to="/contact-us"
-                  className="button mt-6 inline-flex w-60 items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
+                  className="button mt-6 inline-flex w-auto items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
                 >
                   Contact Us
                 </Link>

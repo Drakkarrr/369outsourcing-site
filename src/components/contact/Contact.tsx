@@ -1,6 +1,13 @@
+import { useState } from "react";
 import styled from "styled-components";
 
-const Contact = () => {
+const Contact = (): JSX.Element => {
+  const [fullName, setFullname] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<number | any>(null);
+  const [company, setCompany] = useState<string>("");
+  const [message, setMessage] = useState<string>("");
+
   return (
     <>
       <StyledContact>
@@ -69,44 +76,68 @@ const Contact = () => {
 
               <div className="mt-8 lg:mx-6 lg:w-1/2">
                 <StyledForm>
-                  <div className="mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 text-black shadow-2xl shadow-gray-300/50 dark:shadow-black/50 lg:max-w-xl">
+                  <div className="mx-auto w-full overflow-hidden rounded-lg bg-white px-8 py-10 pt-4 text-black shadow-2xl shadow-gray-300/50 dark:shadow-black/50 lg:max-w-xl">
                     <h1 className="heading text-lg font-medium">
                       Send us a message
                     </h1>
 
-                    <form className="mt-6">
+                    <form className="mt-4">
                       <div className="flex-1">
-                        <label className="mb-2 block text-sm dark:text-gray-200">
-                          Full Name
-                        </label>
+                        <label className="mb-2 block text-sm">Full Name</label>
                         <input
+                          value={fullName}
+                          onChange={(e) => setFullname(e.target.value)}
                           type="text"
-                          placeholder="John Doe"
+                          placeholder="Full Name"
                           className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
                         />
                       </div>
 
-                      <div className="mt-6 flex-1">
-                        <label className="mb-2 block text-sm dark:text-gray-200">
+                      <div className="mt-4 flex-1">
+                        <label className="mb-2 block text-sm">
                           Email address
                         </label>
                         <input
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
                           type="email"
-                          placeholder="johndoe@example.com"
+                          placeholder="Email"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                        />
+                      </div>
+                      <div className="mt-4 flex-1">
+                        <label className="mb-2 block text-sm">Phone</label>
+                        <input
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
+                          type="phone"
+                          placeholder="Phone"
+                          className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
+                        />
+                      </div>
+                      <div className="mt-4 flex-1">
+                        <label className="mb-2 block text-sm">Company</label>
+                        <input
+                          value={company}
+                          onChange={(e) => setCompany(e.target.value)}
+                          type="company"
+                          placeholder="Company"
                           className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400"
                         />
                       </div>
 
-                      <div className="box-mes mt-6 w-full">
-                        <label className="mb-2 block text-sm dark:text-gray-200">
+                      <div className="box-mes mt-4 w-full">
+                        <label className="mb-2 block text-sm text-black">
                           Message
                         </label>
                         <textarea
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           className="mt-2 block h-32 w-full rounded-md border border-gray-200 bg-white px-5 py-3 text-gray-700 placeholder-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-300 dark:placeholder-gray-600 dark:focus:border-blue-400 md:h-48"
-                          placeholder="Message"
+                          placeholder="How can we help you?"
                         ></textarea>
                       </div>
-                      <button className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
+                      <button className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10">
                         Send message
                       </button>
                     </form>
@@ -140,20 +171,11 @@ const StyledContact = styled.div`
     .container-con {
       border-radius: 25px;
       padding: 1rem;
-      /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      border-top: 1px solid rgba(255, 255, 255, 0.1); */
-      /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25); */
-      /* backdrop-filter: blur(15px); */
-      /* background: linear-gradient(135deg, #4682eb -20%, #01beff 120%); */
-      /* background-color: white; */
     }
   }
 `;
 
 const StyledForm = styled.div`
-  /* box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3); */
-
   h1.heading {
     letter-spacing: normal;
     font-weight: bold;
@@ -169,6 +191,7 @@ const StyledForm = styled.div`
     } */
     button {
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+      font-weight: bold;
       background: linear-gradient(135deg, #4682eb -20%, #01beff 120%);
 
       &:hover {

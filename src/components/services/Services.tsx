@@ -25,10 +25,7 @@ const Services: React.FC = () => {
             </div>
 
             <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
-              <a
-                className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition"
-                href="/services/digital-campaigns"
-              >
+              <p className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition">
                 <svg
                   className="h-10 w-10 text-white"
                   fill="#fffffe"
@@ -60,12 +57,9 @@ const Services: React.FC = () => {
                   Providing assistance and support to customers via phone,
                   email, or chat
                 </p>
-              </a>
+              </p>
 
-              <a
-                className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition"
-                href="/services/digital-campaigns"
-              >
+              <p className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition">
                 <svg
                   fill="#fffffe"
                   className="h-10 w-10 text-white"
@@ -97,12 +91,9 @@ const Services: React.FC = () => {
                   Helping customers troubleshoot technical issues with products
                   or services
                 </p>
-              </a>
+              </p>
 
-              <a
-                className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition"
-                href="/services/digital-campaigns"
-              >
+              <p className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition">
                 <svg
                   className="h-10 w-10"
                   fill="#fffffe"
@@ -131,12 +122,9 @@ const Services: React.FC = () => {
                   Promoting and selling products or services to potential
                   customers
                 </p>
-              </a>
+              </p>
 
-              <a
-                className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition"
-                href="/services/digital-campaigns"
-              >
+              <p className="bg-glass hover:border-white-500/10 hover:shadow-white-500/10 block rounded-xl border border-gray-800 p-8 shadow-xl transition">
                 <svg
                   className="h-10 w-10"
                   fill="#fffffe"
@@ -165,7 +153,7 @@ const Services: React.FC = () => {
                   managing financial transactions and accounting processes for
                   client companies
                 </p>
-              </a>
+              </p>
             </div>
           </div>
         </section>
@@ -189,7 +177,7 @@ const StyledServices = styled.div`
     p {
       color: #fffffe !important;
     }
-    .started a {
+    .started {
       color: #fffffe;
       border-radius: 55px;
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
