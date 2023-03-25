@@ -120,17 +120,17 @@ const Home = () => {
                 </div>
 
                 <p className="white-text mt-4 text-sm md:text-lg">
-                  ﻿ Our team of experienced professionals is dedicated to
-                  managing your accounts payables and receivables with the
-                  highest level of expertise and attention to detail. Our
-                  services include managing vendor and customer accounts,
-                  processing invoices, reconciling accounts, and ensuring timely
-                  payments and collections. We will communicate regularly with
-                  vendors and customers, resolve any issues that may arise, and
-                  provide detailed and accurate reporting to help you make
-                  informed business decisions. Our team's focus on efficiency,
-                  accuracy, and customer satisfaction will help streamline your
-                  financial processes and improve your bottom line.
+                  Our team of experienced professionals is dedicated to managing
+                  your accounts payables and receivables with the highest level
+                  of expertise and attention to detail. Our services include
+                  managing vendor and customer accounts, processing invoices,
+                  reconciling accounts, and ensuring timely payments and
+                  collections. We will communicate regularly with vendors and
+                  customers, resolve any issues that may arise, and provide
+                  detailed and accurate reporting to help you make informed
+                  business decisions. Our team's focus on efficiency, accuracy,
+                  and customer satisfaction will help streamline your financial
+                  processes and improve your bottom line.
                 </p>
               </p>
             </div>
