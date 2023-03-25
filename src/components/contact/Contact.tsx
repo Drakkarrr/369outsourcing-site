@@ -46,7 +46,7 @@ const Contact = (): JSX.Element => {
                       />
                     </svg>
 
-                    <span className="text-whit mx-2 w-72 truncate dark:text-gray-400">
+                    <span className="mx-2 w-72 truncate text-black">
                       +61 2 9189 4141
                     </span>
                   </p>
@@ -54,7 +54,7 @@ const Contact = (): JSX.Element => {
                   <p className="-mx-2 flex items-start">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="text-white-500 mx-2 h-6 w-6 dark:text-blue-400"
+                      className="mx-2 h-6 w-6 dark:text-blue-400"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"

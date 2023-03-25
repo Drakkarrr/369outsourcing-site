@@ -9,7 +9,7 @@ const About = () => {
         <StyledAbout className="container mx-auto px-6 py-12">
           <div className="container-con lg:-mx-6 lg:flex lg:items-start">
             <div className="py-10 lg:mx-6 lg:w-1/2">
-              <h2 className="heading mb-4 text-5xl font-bold tracking-tight text-black sm:text-5xl sm:leading-none">
+              <h2 className="heading mb-4 text-center text-5xl font-bold tracking-tight text-black sm:text-5xl sm:leading-none lg:text-left">
                 About Us
               </h2>
               <p className="mb-4 pr-5 text-base text-white md:text-lg">
@@ -28,10 +28,10 @@ const About = () => {
                 contributing to the growth and success of their businesses
               </p>
 
-              <div className="mt-6 space-y-8 md:mt-8">
+              <div className="mt-6 space-y-8 md:mt-6">
                 <Link
                   to="/contact-us"
-                  className="button mt-6 inline-flex w-auto items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
+                  className="button inline-flex w-auto items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
                 >
                   Contact Us
                 </Link>
