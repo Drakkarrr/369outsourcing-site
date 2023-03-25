@@ -30,10 +30,10 @@ const About = () => {
 
               <div className="mt-6 space-y-8 md:mt-6">
                 <Link
-                  to="/contact-us"
+                  to="/our-services"
                   className="button inline-flex w-auto items-center justify-center rounded-full bg-blue-500 py-3 px-10 text-center text-base font-normal text-white hover:bg-opacity-90 lg:px-8 xl:px-10"
                 >
-                  Contact Us
+                  Our Services
                 </Link>
               </div>
             </div>
