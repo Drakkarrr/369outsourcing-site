@@ -185,6 +185,7 @@ const StyledForm = styled.div`
     input {
       font-size: 1rem;
       font-family: "Poppins", sans-serif;
+      color: black;
     }
     /* textarea {
       font-family: "DM Sans", sans-serif;
