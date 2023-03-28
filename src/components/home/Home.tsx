@@ -1,4 +1,5 @@
 import Meeting from "@/assets/Home-us.jpg";
+import bgVid from "@/assets/bg-vid.mp4";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -10,15 +11,15 @@ const Home = () => {
           <div className="container-con lg:-mx-6 lg:flex lg:items-center">
             <div className="flex  flex-col py-10 lg:mx-6 lg:w-1/2">
               <h2 className="heading mb-4 text-center text-5xl font-bold tracking-tight text-black sm:text-5xl sm:leading-none lg:text-left">
-                HOW CAN WE ADD VALUE TO YOUR BUSINESS
+                Simplified Staffing
               </h2>
               <p className="mb-4 pr-5 text-base text-white md:text-lg">
-                By entrusting repetitive tasks to our offshore teams, your local
-                teams can dedicate their time and energy to more strategic
-                endeavors. This approach enhances your business's productivity
-                and profitability. Our carefully vetted and trained extended
-                team seamlessly integrates with your distinctive business
-                operations.
+                We provide expert staffing solutions tailored to your business
+                needs. With our extensive network and streamlined process, we
+                help you save time and money, while ensuring that you get the
+                best possible talent. Whether you need short-term or long-term
+                staffing, we offer flexible and affordable options. Partner with
+                us and take your business to the next level.
               </p>
 
               <div className="mt-2 space-y-8 lg:mt-6">
@@ -135,6 +136,9 @@ const Home = () => {
               </p>
             </div>
           </div>
+          <video id="background-video" autoPlay loop>
+            <source src={bgVid} type="video/mp4" />
+          </video>
         </StyledHome>
       </section>
     </>
@@ -149,12 +153,12 @@ const StyledHome = styled.div`
     font-weight: 200;
   }
   .Home-container {
-    background: rgb(255, 255, 254);
     background: linear-gradient(
       90deg,
       rgba(255, 255, 254, 1) 0%,
       rgba(150, 147, 147, 1) 100%
     );
+    background: url("@/assets/bg-vid");
 
     h2.heading {
       color: black !important;

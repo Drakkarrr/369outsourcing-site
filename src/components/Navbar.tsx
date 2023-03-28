@@ -205,12 +205,9 @@ const StyledNav = styled.nav`
   nav {
     backdrop-filter: blur(5px);
     box-shadow: 0px 1px 10px #252525af;
-    /* background: rgba(255, 255, 255, 0.05); */
     background: #127bcb;
-
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
     letter-spacing: 1px;
 
     li a {
